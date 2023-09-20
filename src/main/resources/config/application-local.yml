@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://hyunndb.cuq9ijf7omb7.ap-northeast-2.rds.amazonaws.com/ACG?autoReconnect=true
+    username: master
+    password: ht991202!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: ed59f007f442919188fe
+            client-secret: fde25c1b8b1d090fb1477381217e242e8e0d8058
+            redirect-uri: http://localhost:8080/login/oauth2/code/github
