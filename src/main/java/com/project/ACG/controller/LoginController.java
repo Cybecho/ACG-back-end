@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LoginController {
   @GetMapping
   public String getToken(@RequestParam ("code") String authorizationCode) {
+    System.out.println(authorizationCode);
     return authorizationCode;
   }
 }
